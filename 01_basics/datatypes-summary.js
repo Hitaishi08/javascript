@@ -55,4 +55,34 @@ const myFunction = function(){
 console.log(typeof myFunction)
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memories: 
+// 1.Stack (used for Primitive datatypes)  jo bhi maine yaha variable declaire kiya uska copy milta hai 
+// 2. Heap (used for non-primitive)  or heap memeory se muje value ka refference milta hai(original value ka)
+
+let myname = "hitaishi"
+
+let fullname = myname
+
+fullname = "hitaishi singhaniya"
+
+console.log(fullname)   
+console.log(myname) // it will not change because you will get the copy not the original value
+
+
+let userone ={
+    id: "123",
+    name: "user1"
+}
+
+let usertwo = userone;  //(you will get the refference not the copy)
+
+usertwo.id = "111"
+
+console.log(userone.id)
+console.log(usertwo.id)
+
+// explain: userone and usertwo both variable name will be declare in the stack but they both point to the same memory location inside the heap in which the value is stored.
+
 
