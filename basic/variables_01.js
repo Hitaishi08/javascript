@@ -44,3 +44,12 @@ console.log(b);
 
 // const can neither be updated nor be re-declared
 // const must be initialize when declared -
+
+
+
+
+
+
+
+
+
