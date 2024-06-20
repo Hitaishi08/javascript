@@ -43,3 +43,23 @@ for(let b of "hitaishi")
     {
         console.log(b);
     }
+
+// WHILE LOOP
+/*
+let i = 0;
+let n = 5;
+
+while(i<=n)
+    {
+        console.log(i);
+        i++;
+    }
+*/
+
+// DO WHILE LOOP (it will execute at least 1 time)
+let i =0;
+let n = 10;
+do{
+    console.log(i);
+    i++;
+}while(i<n)
