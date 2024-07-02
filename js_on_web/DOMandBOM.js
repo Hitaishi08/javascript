@@ -21,6 +21,11 @@ When an HTML file is loaded into the browser, the JavaScript can not understand 
 So it interprets and interacts with the Document Object Model (DOM), which is created by the browser based on the HTML document.
 
 
+BOM: Browser Object Model (BOM)
+-> it is browser-specific convention referring to all the onjects exposed by the browser.
+->BOM allows javascript to "intract with" the browser.
+->The window object represents a browser window and all its corresponding features
+-> alert, prompt and confirm is the method of the BOM
  */
 
 
