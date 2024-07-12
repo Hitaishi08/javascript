@@ -25,5 +25,5 @@ btn1.style.color = "white"
 
 // getElementByTagName
 console.log(document.getElementsByTagName('a'))
-console.log(document.getElementsByTagName('h1'))
+console.log((document.querySelector('.card')).getElementsByTagName("a"))
 
