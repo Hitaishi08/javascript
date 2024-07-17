@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="btn">
+            click me
+        </button>
+    </div>
+</body>
+<script>
+
+    let x = function(e){
+        console.log(e);
+        console.log(e.target);
+        // alert("hello world");
+    }
+
+    let y = function(e){
+        alert("hello world2");
+    }
+
+    btn.addEventListener('click',x);
+
+    btn.addEventListener('click',y);
+
+    let a = prompt("what is your fav number?");
+
+    if(a=="2")
+    {
+        // this will not remove the event listener
+        btn.removeEventListener('click',x)
+    }
+
+    // what you need to is create a varibale and asign a function to it and pass that variable as a argument in the event listener
+</script>
+</html>
