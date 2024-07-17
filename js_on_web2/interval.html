@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and setInterval</title>
+</head>
+<body>
+    
+</body>
+<script>
+document.write("hello");
+
+// let a =  setTimeout(function(){
+//         alert("i am inside set timeout")
+//     },5000)
+
+// let b = prompt("do you want to run the setTimeout(y/n)");
+// if(b == 'n'){
+// clearTimeout(a);  // stopt the execution of the setTimeout 
+// }
+
+// a is a timer id
+// console.log(a);
+
+const sum = (a,b) =>{
+    console.log("yes i am running");
+    console.log(a+b);
+    return a+b;
+}
+
+// one way of doing it
+// setTimeout(function(){
+//     sum(10,20);
+// },4000)
+
+
+// another way of doing it
+setTimeout(sum,4000,50,50); // setTimeout(function(),delay,arg1,agr2)
+
+// it wil keep running after a interval
+// setInterval(function(){
+//     alert("setinterval")
+// },4000);
+
+let c = setInterval(sum,2000,20,30);
+
+clearInterval(c);
+
+</script>
+</html>
